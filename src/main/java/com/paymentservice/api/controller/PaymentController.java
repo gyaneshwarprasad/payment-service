@@ -20,7 +20,7 @@ public class PaymentController {
     public PaymentController(PaymentService paymentService) {
         this.paymentService = paymentService;
     }
-
+  // http://localhost:8080/payments
     @PostMapping
     public ResponseEntity<String> createPayment(@RequestBody PaymentPayload paymentPayload) {
         try {
